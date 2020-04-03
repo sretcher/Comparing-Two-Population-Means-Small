@@ -29,9 +29,22 @@ Ha: u1 - u2 > 0
 
 In our example, we will use x-bar1 - xbar2 as a point estimator for u1-u2.  To find the t statistic, we need to know the standard error of x-bar1 - xbar2. When two samples are independent, the standard error is equal to sqrt (σ2/n1 + σ2/n2). Using the null hypothesis value, we can form the t statistic with the formula x-bar1 - xbar2 - 0 / sqrt ( o2/n1 + σ2/n2 ). 
 
-Since the population variances are equal, we can use a pooled sample estimator for σ2. Usually we would use each individual sample variance to estimate each populations variance but taking the weighted average of the sample variances will give a more accurate estimate for the population variance. 
+Since the population variances are equal, we can use a pooled sample estimator for σ2. Usually we would use each individual sample variance to estimate each populations variance but taking the weighted average of the sample variances will give a more accurate estimate for the population variance of each population. 
 
-In this problem, the pooled sample estimator for σ2 is 
+In this problem, the pooled sample estimator for σ2 is about 26.3. Using the formula, our t-statistic is 1.78. 
+
+
+### Test of Hypothesis for (u1 - u2)
+
+The t criticial value corresponding to an area of 0.05 and a df of 23 is 1.714. Since our t-statistic is greater than 1.714, we can reject the null hypothesis and that the true mean FNE score for female students with bulimia is higher than the true mean FNE score of students without eating disorders. Looking at a table, we see that our t-statistic is between t(0.05) and t(0.025) for a df of 23. This means that our p-value is between 0.05 and 0.025.
+
+
+Using the formula for a 95% one sided confidence interval, we get 3.68 - 3.54. We are 95% confident that the true mean FNE score for female students with bulimia is (0.14, Inf) higher than the true mean FNE score of students without eating disorders. 
+
+Doing the test in JMP and R, we get similiar answers. Note that in JMP, the population are switched but we come to the same answer. In R, we seperate the groups into vectors and than conduct the test. Note `var.equal=TRUE` means that we are assuming equal variances. 
+
+![boxplot](boxplot.png)
+
 
 
 
