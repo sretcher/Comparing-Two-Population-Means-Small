@@ -43,7 +43,35 @@ Using the formula for a 95% one sided confidence interval, we get 3.68 - 3.54. W
 
 Doing the test in JMP and R, we get similiar answers. Note that in JMP, the population are switched but we come to the same answer. In R, we seperate the groups into vectors and than conduct the test. Note `var.equal=TRUE` means that we are assuming equal variances. 
 
-![boxplot](boxplot.png)
+![t-test](t-test.png)
+
+```
+library(tidyverse)
+
+students <- read.csv("BULIMIA.csv",header = TRUE)
+
+
+normal <-students %>%
+  filter(GROUP=="Normal")
+
+bulimc <- atudents %>%
+  filter(GROUP=="Bulimic")
+
+
+t.test(bulimc$FNESCORE,normal$FNESCORE,alternative = "greater",conf.level = .95,var.equal = TRUE)
+
+### Two Sample t-test
+
+### data:  bulimc$FNESCORE and normal$FNESCORE
+### t = 1.7781, df = 23, p-value = 0.04431
+### alternative hypothesis: true difference in means is greater than 0
+### 95 percent confidence interval:
+### 0.1326808       Inf
+### sample estimates:
+### mean of x mean of y 
+### 17.81818  14.14286 
+```
+
 
 
 
