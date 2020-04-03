@@ -12,21 +12,26 @@ One experiment reported in The American Statistician wished to see whether women
 ![boxplot](boxplot.png)
 
 
-Since both of our sample sizes are less than 30, the CLT says that the sampling distribution of (u1-u2) will not be normal and our sample variances will not be good approximations for our population variances when the sample size is small. We can however use the t-distribution if the above requirements are met. 
+Since both of our sample sizes are less than 30, the CLT says that the sampling distribution of (u1-u2) will not be normal and our sample variances will not be good approximations for our population variances when the sample size is small. We can however use the t-distribution if the above requirements are met.
 
 From the information given, we will assume the samples are random and independent. To check the second assumption, we use a normal probability plot which tells us that the sampled populations are normal so we can assume the second assumption has been fulfilled. For the last assumption, we look at boxplots and conduct tests of equal variance which shows that the variances are equal. 
 
 #### Hypotheses for Small Independent Samples Test for (u1-u2)
-Let the true mean FNE score for female nstudents with bulimia be u1 and the true mean FNE score for female students without an eating disorder be u2. We will be using a level of significance of 0.05.
+Let the true mean FNE score for female students with bulimia be u1 and the true mean FNE score for female students without an eating disorder be u2. We will be using a level of significance of 0.05.
 
 Ho: u1 - u2 = 0
 
-Ha: u1 - u2 >0
+Ha: u1 - u2 > 0
 
 
 
 #### Student's t-Statistic
 
+In our example, we will use x-bar1 - xbar2 as a point estimator for u1-u2.  To find the t statistic, we need to know the standard error of x-bar1 - xbar2. When two samples are independent, the standard error is equal to sqrt (σ2/n1 + σ2/n2). Using the null hypothesis value, we can form the t statistic with the formula x-bar1 - xbar2 - 0 / sqrt ( o2/n1 + σ2/n2 ). 
+
+Since the population variances are equal, we can use a pooled sample estimator for σ2. Usually we would use each individual sample variance to estimate each populations variance but taking the weighted average of the sample variances will give a more accurate estimate for the population variance. 
+
+In this problem, the pooled sample estimator for σ2 is 
 
 
 
