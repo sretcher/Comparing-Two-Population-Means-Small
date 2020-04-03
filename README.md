@@ -1,3 +1,6 @@
+Spencer Retcher
+[sretcher.github.io](https://github.com/sretcher/sretcher.github.io)
+
 #### Comparing Two Population Means: Independent Sampling (Small Samples)
 One experiment reported in The American Statistician wished to see whether women with eating disorders are more fearful of negative evaluation. One sample consisted of 11 students with bulimia and the other sample consisted of 14 students without an eating disorder. Each student completed a questionaire which resulted in a fear of negative evaluation (FNE) score. The higher the score, the greater the fear of negative evaluation. We will use a two sample t-test to see if the true mean FNE score for students with bulimia is higher than the true mean FNE score for people without an eating disorder.
 
